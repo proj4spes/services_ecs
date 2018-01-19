@@ -34,7 +34,7 @@ variable "environment" {
 
 module "hell_woo" {
   # this sources from the "stack//service" module
-  source          = "../con-stack/stack/service_new"
+  source          = "git::git@github.com:proj4spes/con-stack.git//modules/stack/service_new?ref=v0.1"
   name            = "${var.name}"
   image           = "376128762854.dkr.ecr.eu-west-1.amazonaws.com/${var.name}"
   container_port  = "${var.container_port}"
