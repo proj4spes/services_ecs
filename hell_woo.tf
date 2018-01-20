@@ -11,11 +11,12 @@ variable "aws_region" {
 
 variable "cluster" {
   description = "The Cluster name to be used by service"
+  default     = "stack"
   
 }
 variable "name" {
   description = "The service/image  name"
-
+  default     = "376128762854.dkr.ecr.eu-west-1.amazonaws.com/hello-world"
 }
 variable "container_port" {
   description = "The hell-woo container port"
